@@ -45,7 +45,7 @@ public class loginStepDefinition {
 	public void user_clicks_on_login_button() throws Throwable {
 		WebElement submitButton=driver.findElement(By.xpath("//*[@id=\"ui\"]/div/div/form/div/div[3]"));
 		submitButton.click();
-	    
+	    System.out.println("in click");
 	}
 
 	@Then("^user is on home page$")
