@@ -1,160 +1,38 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/gayat/eclipse-workspace/FreeCRMBDDFramework/src/main/java/Features/login.Feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/gayat/eclipse-workspace/FreeCRMBDDFramework/src/main/java/Features/Contacts.Feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Login Feature",
+  "name": "Free CRM Contacts feature",
   "description": "",
-  "id": "free-crm-login-feature",
+  "id": "free-crm-contacts-feature",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#Without Examples keyword"
-    },
-    {
-      "line": 4,
-      "value": "#Scenario: Free CRM Login Test Scenario"
-    },
-    {
-      "line": 6,
-      "value": "#Given user is already on Login Page"
-    },
-    {
-      "line": 7,
-      "value": "#When title of login page is Free CRM"
-    },
-    {
-      "line": 8,
-      "value": "#Then user enters \"gvg2512@gmail.com\" and \"Pass@1234\""
-    },
-    {
-      "line": 9,
-      "value": "#Then user clicks on login button"
-    },
-    {
-      "line": 10,
-      "value": "#Then user is on home page"
-    },
-    {
-      "line": 12,
-      "value": "#With Examples keyword"
-    }
-  ],
-  "line": 13,
-  "name": "Free CRM Login Test Scenario",
+formatter.background({
+  "line": 3,
+  "name": "User logs in to Free CRM",
   "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
-  "line": 15,
-  "name": "user is already on Login Page",
+  "line": 4,
+  "name": "User is already on Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 16,
-  "name": "title of login page is Free CRM",
+  "line": 5,
+  "name": "User Enters \"gvg2512@gmail.com\" and \"Pass@1234\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user clicks on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 20,
-  "name": "",
-  "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 21,
-      "id": "free-crm-login-feature;free-crm-login-test-scenario;;1"
-    },
-    {
-      "cells": [
-        "gvg2512@gmail.com",
-        "Pass@1234"
-      ],
-      "line": 22,
-      "id": "free-crm-login-feature;free-crm-login-test-scenario;;2"
-    },
-    {
-      "cells": [
-        "tom",
-        "test"
-      ],
-      "line": 23,
-      "id": "free-crm-login-feature;free-crm-login-test-scenario;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "Free CRM Login Test Scenario",
-  "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 15,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 16,
-  "name": "title of login page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 17,
-  "name": "user enters \"gvg2512@gmail.com\" and \"Pass@1234\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user clicks on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user is on home page",
+  "line": 6,
+  "name": "User logs in",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepDefinition.user_is_already_on_Login_Page()"
+  "location": "ContactStepDefinition.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 9885258300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "loginStepDefinition.title_of_login_page_is_Free_CRM()"
-});
-formatter.result({
-  "duration": 6558299300,
+  "duration": 10728399000,
   "status": "passed"
 });
 formatter.match({
@@ -168,106 +46,60 @@ formatter.match({
       "offset": 37
     }
   ],
-  "location": "loginStepDefinition.user_enters_and(String,String)"
+  "location": "ContactStepDefinition.user_Enters_and(String,String)"
 });
 formatter.result({
-  "duration": 775245900,
+  "duration": 275967600,
   "status": "passed"
 });
 formatter.match({
-  "location": "loginStepDefinition.user_clicks_on_login_button()"
+  "location": "ContactStepDefinition.user_logs_in()"
 });
 formatter.result({
-  "duration": 129972200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "loginStepDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 42300,
+  "duration": 12736800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
-  "name": "Free CRM Login Test Scenario",
+  "line": 8,
+  "name": "Free CRM Test Contact Scenario",
   "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario;;3",
+  "id": "free-crm-contacts-feature;free-crm-test-contact-scenario",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 15,
-  "name": "user is already on Login Page",
+  "line": 9,
+  "name": "User is on home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 16,
-  "name": "title of login page is Free CRM",
+  "line": 10,
+  "name": "User is on Contacts Page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
-  "name": "user enters \"tom\" and \"test\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user clicks on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user is on home page",
+  "line": 11,
+  "name": "User creates contact",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepDefinition.user_is_already_on_Login_Page()"
+  "location": "ContactStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 11767583400,
-  "status": "passed"
+  "duration": 54087400,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"main-nav\"]/div[3]/a/i\"}\n  (Session info: chrome\u003d107.0.5304.107)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.0\u0027, revision: \u00272ecb7d9a\u0027, time: \u00272018-10-31T20:09:30\u0027\nSystem info: host: \u0027DESKTOP-SRL21OD\u0027, ip: \u0027192.168.0.149\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\gayat\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f851991ff7debc79772c85c67b3c6b8a\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"main-nav\"]/div[3]/a/i}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefinitions.ContactStepDefinition.user_is_on_home_page(ContactStepDefinition.java:53)\r\n\tat ✽.Given User is on home page(C:/Users/gayat/eclipse-workspace/FreeCRMBDDFramework/src/main/java/Features/Contacts.Feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "loginStepDefinition.title_of_login_page_is_Free_CRM()"
+  "location": "ContactStepDefinition.user_is_on_Contacts_Page()"
 });
 formatter.result({
-  "duration": 8472377800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "tom",
-      "offset": 13
-    },
-    {
-      "val": "test",
-      "offset": 23
-    }
-  ],
-  "location": "loginStepDefinition.user_enters_and(String,String)"
+  "location": "ContactStepDefinition.user_creates_contact()"
 });
 formatter.result({
-  "duration": 271685800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "loginStepDefinition.user_clicks_on_login_button()"
-});
-formatter.result({
-  "duration": 96611500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "loginStepDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 38500,
-  "status": "passed"
+  "status": "skipped"
 });
 });
